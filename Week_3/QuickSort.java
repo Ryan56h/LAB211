@@ -13,8 +13,7 @@ import java.util.Scanner;
  */
 public class QuickSort {
 
-    Scanner scanner = new Scanner(System.in);
-
+    
     int arr[];
 
     public QuickSort(int[] arr) {
@@ -24,18 +23,7 @@ public class QuickSort {
     public QuickSort() {
     }
 
-    public int checkInputInteger() {
 
-        while (true) {
-            try {
-                int result = Integer.parseInt(scanner.nextLine().trim());
-                return result;
-            } catch (NumberFormatException e) {
-                System.err.println("Invalid input. Please enter a double number! ");
-                System.out.println("Enter again: ");
-            }
-        }
-    }
 
    public void generateRandom(int size) {
         arr = new int[size];

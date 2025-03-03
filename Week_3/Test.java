@@ -1,6 +1,19 @@
 package Week_3;
-
+import java.util.Scanner;
 public class Test{
+    
+    public int checkInputInteger() {
+Scanner scanner = new Scanner(System.in);
+        while (true) {
+            try {
+                int result = Integer.parseInt(scanner.nextLine().trim());
+                return result;
+            } catch (NumberFormatException e) {
+                System.err.println("Invalid input. Please enter a double number! ");
+                System.out.println("Enter again: ");
+            }
+        }
+    }
     public static void main(String[] args){
 //Bubble Sort      
         // BubbleSort bbs = new BubbleSort();
@@ -54,4 +67,6 @@ public class Test{
                
                 stack.display();
     }
+
+
 }

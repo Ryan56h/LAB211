@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 public class BinarySearch {
 
-    Scanner scanner = new Scanner(System.in);
     int[] arr;
 
     public BinarySearch(int[] arr) {
@@ -20,18 +19,7 @@ public class BinarySearch {
         System.out.println(Arrays.toString(arr));
     }
 
-    public int checkInputInteger() {
-
-        while (true) {
-            try {
-                int result = Integer.parseInt(scanner.nextLine().trim());
-                return result;
-            } catch (NumberFormatException e) {
-                System.err.println("Invalid input. Please enter a double number! ");
-                System.out.println("Enter again: ");
-            }
-        }
-    }
+    
 
     public int binarySearch(int[] array, int target) {
         int left = 0;
